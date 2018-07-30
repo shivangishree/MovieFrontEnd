@@ -1,0 +1,10 @@
+mat-card-image {
+    background-size: cover;
+}
+mat-card{
+    height: 100px;
+    width: 100px;
+}
+mat-card-actions{
+    margin-left: 3px;
+}

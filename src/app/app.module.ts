@@ -12,6 +12,7 @@ import { SaveMovieComponent } from './save-movie/save-movie.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { MatListModule } from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatFormFieldModule,
     FormsModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [ MovieService],
   bootstrap: [AppComponent]

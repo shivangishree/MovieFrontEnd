@@ -18,14 +18,14 @@ export class AppComponent {
     type: "d"
   };
   constructor(private movieService: MovieService) {}
-values='1';
+  values = "1";
   ngOnInit() {
     // this.movieService.getMovies().subscribe((data: Movie[]) => {
     //   this.movies = data;
     // });
-    this.movieService.saveMovie(this.movie).subscribe(data => {
-      this.movie2 = data;
-    });
+    // this.movieService.saveMovie(this.movie).subscribe(data => {
+    //   this.movie2 = data;
+    // });
     // this.movieService.getMoviesById().subscribe(data =>{
     //   this.movie2 = data;
     // }
@@ -33,7 +33,8 @@ values='1';
     // )
   }
 
-  onKey(event: any) { // without type info
-    this.values += event.target.value ;
+  onKey(event: any) {
+    // without type info
+    this.values += event.target.value;
   }
 }

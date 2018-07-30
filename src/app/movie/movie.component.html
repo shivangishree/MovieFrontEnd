@@ -1,14 +1,24 @@
 <div>
   <div>
   <h1>List of Movies</h1>
-    <button><a routerLink="/save_movie">Add Movie</a></button>
+    <button><a routerLink="/save_movie">Add Movie</a></button><br>
+    <input [(ngModel)]="movieTitle" placeholder="name">
+    <button (click)=searchMovie()>Search Movie</button><br>
     <mat-list>
       <mat-list-item *ngFor ="let movie of movies">
           <a routerLink="/movie/{{movie.id}}">
             <span class="badge">{{movie.title}}</span> {{movie.name}}
           </a>
+          <button (click)=deleteMovie(movie)>delete movie</button>
       </mat-list-item>
     </mat-list>
 </div>
+<div *ngIf="omdbMovie">
+    omdb searched movie <br>
+    title {{omdbMovie.Title}}<br>
+    year {{omdbMovie.Year}}
+<button (click)=saveOMDBMovie(omdbMovie)>save movie</button>
+</div>
+{{deleteStatus}}
 
 
