@@ -1,0 +1,14 @@
+<div>
+  <div>
+  <h1>List of Movies</h1>
+    <button><a routerLink="/save_movie">Add Movie</a></button>
+    <mat-list>
+      <mat-list-item *ngFor ="let movie of movies">
+          <a routerLink="/movie/{{movie.id}}">
+            <span class="badge">{{movie.title}}</span> {{movie.name}}
+          </a>
+      </mat-list-item>
+    </mat-list>
+</div>
+
+

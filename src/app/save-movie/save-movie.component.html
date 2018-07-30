@@ -1,0 +1,25 @@
+<div>
+		<label>id:
+			<input [(ngModel)]="movie.id" placeholder="name">
+		</label>
+		<br>
+		<label>title:
+				<input [(ngModel)]="movie.title" placeholder="name">
+			</label>
+			<br>
+			<label>year:
+					<input [(ngModel)]="movie.year" placeholder="name">
+				</label>
+				<br>
+				<label>type:
+						<input [(ngModel)]="movie.type" placeholder="name">
+					</label>
+					<br>
+					<label>poster:
+							<input [(ngModel)]="movie.poster" placeholder="name">
+						</label>
+						<br>
+						{{movie.title}}
+						<button (click)="addMovie()">Add</button>
+	</div>
+	
